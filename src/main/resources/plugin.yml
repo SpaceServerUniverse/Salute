@@ -1,0 +1,11 @@
+name: Salute
+version: '${project.version}'
+main: space.yurisi.salute.Salute
+api-version: '1.20'
+commands:
+  k:
+    description: こんにちはの顔文字を送信します
+  oti:
+    description: おちるときのの顔文字を送信します
+  otu:
+    description: おつかれの顔文字を送信します
