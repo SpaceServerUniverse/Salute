@@ -11,17 +11,18 @@ public class kCommand extends SaluteBaseCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+        String name = commandSender.getName();
         setMessages(new Component[]{
-                Component.text("§a|^・ω・)/ ﾊﾛｰ♪"),
-                Component.text("§aｺﾝﾆﾁ波！( ゜o）＜≡≡((((☆ｶﾞｺﾞｰﾝ☆）>o<)ノ ｵｩｰ"),
-                Component.text("§a＝＝((( (/* ^^)/ ﾊﾛｰｰｰ!!"),
-                Component.text("§aｺﾝﾁｬｯ(/∀＼*)ｷｬｯｷｬｯ"),
-                Component.text("§a(｡･ω･)ﾉ こんてぃわー"),
-                Component.text("§a(*´_｀)ﾉ ﾔﾎﾟｰ♪"),
-                Component.text("§aこん(/・ω・)/にゃちゎ"),
-                Component.text("§a(。･o･｡)ﾉ こんにちゎぁ♪"),
-                Component.text("§a(*◎Ｕ∀Ｕp)q♪ﾁﾜｧ♪"),
-                Component.text("§a(√･ω･) ちーっす")
+                Component.text( name + ">> " + "§a|^・ω・)/ ﾊﾛｰ♪"),
+                Component.text(name + ">> " + "§aｺﾝﾆﾁ波！( ゜o）＜≡≡((((☆ｶﾞｺﾞｰﾝ☆）>o<)ノ ｵｩｰ"),
+                Component.text(name + ">> " + "§a＝＝((( (/* ^^)/ ﾊﾛｰｰｰ!!"),
+                Component.text(name + ">> " + "§aｺﾝﾁｬｯ(/∀＼*)ｷｬｯｷｬｯ"),
+                Component.text(name + ">> " + "§a(｡･ω･)ﾉ こんてぃわー"),
+                Component.text(name + ">> " + "§a(*´_｀)ﾉ ﾔﾎﾟｰ♪"),
+                Component.text(name + ">> " + "§aこん(/・ω・)/にゃちゎ"),
+                Component.text(name + ">> " + "§a(。･o･｡)ﾉ こんにちゎぁ♪"),
+                Component.text(name + ">> " + "§a(*◎Ｕ∀Ｕp)q♪ﾁﾜｧ♪"),
+                Component.text(name + ">> " + "§a(√･ω･) ちーっす")
         });
 
         Bukkit.broadcast(getMessage());

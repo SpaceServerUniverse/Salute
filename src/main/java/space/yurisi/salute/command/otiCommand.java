@@ -11,19 +11,21 @@ public class otiCommand extends SaluteBaseCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+        String name = commandSender.getName();
         setMessages(
                 new Component[]{
-                        Component.text("§b(@＾皿＾@)ゞ『ォチﾏｽ!!』*｡+ﾟ★"),
-                        Component.text("§b(○´∇｀)ﾉ☆ﾟ+.退室ｲﾀｼﾏｽ.+ﾟ☆"),
-                        Component.text("§b★ﾟ+o｡(☆´･ω･)σ《ぉちます》a(･ω･｀★)｡o+ﾟ☆"),
-                        Component.text("§bp【+ﾟ*退室ｼﾁｬｳｮ:ﾟ+】qД｀｡)｡o.ﾟ｡"),
-                        Component.text("§bヾ(´Д｀q･ﾟ･ﾊﾞィﾊﾞィ! おちるﾈェｯ!!*:ﾟ･☆"),
-                        Component.text("§bヾ(★´Å｀★)σ【ｵﾁﾙﾈェ～】｡o+☆"),
-                        Component.text("§b人･∀･*).o0((ｿﾛｿﾛ☆落ﾁﾏｽ★))"),
-                        Component.text("§bｵﾁﾙﾈ～☆εε==≡ヾ(★,,´∀'｀)ﾉ")
+                        Component.text(  name + ">> " + "§b(@＾皿＾@)ゞ『ォチﾏｽ!!』*｡+ﾟ★"),
+                        Component.text(name + ">> " + "§b(○´∇｀)ﾉ☆ﾟ+.退室ｲﾀｼﾏｽ.+ﾟ☆"),
+                        Component.text(name + ">> " + "§b★ﾟ+o｡(☆´･ω･)σ《ぉちます》a(･ω･｀★)｡o+ﾟ☆"),
+                        Component.text(name + ">> " + "§bp【+ﾟ*退室ｼﾁｬｳｮ:ﾟ+】qД｀｡)｡o.ﾟ｡"),
+                        Component.text(name + ">> " + "§bヾ(´Д｀q･ﾟ･ﾊﾞィﾊﾞィ! おちるﾈェｯ!!*:ﾟ･☆"),
+                        Component.text(name + ">> " + "§bヾ(★´Å｀★)σ【ｵﾁﾙﾈェ～】｡o+☆"),
+                        Component.text(name + ">> " + "§b人･∀･*).o0((ｿﾛｿﾛ☆落ﾁﾏｽ★))"),
+                        Component.text(name + ">> " + "§bｵﾁﾙﾈ～☆εε==≡ヾ(★,,´∀'｀)ﾉ")
 
                 }
         );
+
 
         Bukkit.broadcast(getMessage());
         return true;
